@@ -1,0 +1,39 @@
+{
+  "name": "chenyx-cli",
+  "version": "1.0.0",
+  "description": "chenyx的脚手架工具",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/chen-yunx/cli.git"
+  },
+  "bin": {
+    "chenyx-cli": "dist/lib/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc -p .",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish"
+  },
+  "keywords": [
+    "js",
+    "cli",
+    "chenyx"
+  ],
+  "author": "chenyxjs",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/inquirer": "^9.0.3",
+    "commander": "^10.0.1",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^11.1.1",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.2.5",
+    "ora": "^4.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
